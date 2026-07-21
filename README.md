@@ -1,4 +1,4 @@
-# TalalAliAlshehri ### مرحباً 👋 أنا طلال العلي الشهري
+# TalalAliAlshehri ### مرحباً 👋 أنا طلال علي الشهري
 
 🚀 **Building Networking Projects**
 

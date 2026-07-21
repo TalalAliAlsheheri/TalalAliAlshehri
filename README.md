@@ -143,6 +143,8 @@ Future Improvements
 	•	EtherChannel
 	•	STP
 	•	IPv6 Routing
+
+	
 Author
 Talal Ali Alshehri
 Information Technology Graduate with a strong interest in Networking, Cisco Technologies, and IT Infrastructure.

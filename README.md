@@ -162,11 +162,24 @@ Future Improvements
 	•	EtherChannel
 	•	STP
 	•	IPv6 Routing
-Screenshots
-Network Topology
-Router Configuration (show ip interface brief)
-Ping Test (End-to-End Connectivity)
-Running Configuration
+
+## Screenshots
+
+### Network Topology
+![Topology](screenshots/topology.png)
+
+### Router Configuration (show ip interface brief)
+![Interfaces](screenshots/interfaces.png)
+
+### PC IP Configuration
+![PC Configuration](screenshots/pc_configuration.png)
+
+### Ping Test (End-to-End Connectivity)
+![Ping Test](screenshots/ping_test.png)
+
+### Running Configuration
+![Running Config](screenshots/running_config.png)
+
 
 
 Author

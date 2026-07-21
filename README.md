@@ -1,32 +1,44 @@
 TalalAliAlshehri
 
-Enterprise Static Routing Network (Cisco Packet Tracer)
-Overview
+Enterprise Static Routing Network 
+(Cisco Packet Tracer)
+
+Overview:
 
 This project demonstrates the design and implementation of a small enterprise network using Cisco Packet Tracer. The network consists of a headquarters (HQ) and two branch offices connected through static routing. The project focuses on IPv4 addressing, router configuration, LAN connectivity, and end-to-end communication between all sites.
+
 Objectives
+
 	•	Design a multi-site enterprise network.
 	•	Configure Cisco routers and switches.
 	•	Implement IPv4 addressing.
 	•	Configure Static Routing.
 	•	Verify end-to-end connectivity.
 	•	Document the network configuration following networking best practices.
-Network Topology
-                HQ-R1
-               /     \
-              /       \
-          BR1-R2     BR2-R3
-            |            |
-         BR1-SW1      BR2-SW1
-         /  |  \       /  |  \
-       PC2 PC3 PC4   PC5 PC6 PC7
-            |
-         HQ-SW1
-         /    \
-       PC0    PC1
 
-       Devices Used
-       |Device|Model          |Quantity|
+Network Topology
+                         [PC0]         [PC1]
+                            \             /
+                             \           /
+                            [HQ-SW1 / 2960-24TT]
+                                    |
+                                    |
+                              [HQ-R1 / 2911]
+                                 /      \
+                                /        \
+                    (WAN)      /          \      (WAN)
+                              /            \
+                     [BR1-R2 / 2901]   [BR2-R3 / 2901]
+                            |                   |
+                            |                   |
+                  [BR1-SW1 / 2960-24TT]   [BR2-SW1 / 2960-24TT]
+                       /    |    \             /    |    \
+                      /     |     \           /     |     \
+                  [PC2]  [PC3]  [PC4]     [PC5]  [PC6]  [PC7]
+
+Devices Used
+
+|Device|Model          |Quantity|
 |------|---------------|--------|
 |Router|Cisco 2911     |1       |
 |Router|Cisco 2901     |2       |
@@ -46,7 +58,9 @@ Branch Office 2
 	•	Router: BR2-R3
 	•	Switch: BR2-SW1
 	•	PCs: PC5, PC6, PC7
+
 IP Addressing Plan
+
 LAN Networks
 |Site       |Network        |Subnet Mask  |Gateway                   |
 |-----------|---------------|-------------|--------------------------|
@@ -78,7 +92,9 @@ Routers
 	•	Assigned IPv4 addresses to all interfaces.
 	•	Enabled interfaces using no shutdown.
 	•	Configured Static Routes.
-	•	Saved configuration using: copy running-config startup-config
+	•	Saved configuration using:
+	copy running-config startup-config
+
 Switches
 	•	Connected all end devices.
 	•	Provided Layer 2 connectivity.
@@ -94,7 +110,9 @@ Static routes were configured on all three routers to provide communication betw
 	•	Headquarters
 	•	Branch Office 1
 	•	Branch Office 2
-Verification command: show ip route
+Verification command:
+show ip route
+
 Verification
 The following tests were completed successfully:
 	•	✅ PC0 → PC2
@@ -103,7 +121,8 @@ The following tests were completed successfully:
 	•	✅ Local Gateway Ping
 	•	✅ Interface Status Verification
 	•	✅ Routing Table Verification
-Useful verification commands:show ip interface brief
+Useful verification commands:
+show ip interface brief
 show ip route
 ping
 traceroute
@@ -143,9 +162,15 @@ Future Improvements
 	•	EtherChannel
 	•	STP
 	•	IPv6 Routing
+Screenshots
+Network Topology
+Router Configuration (show ip interface brief)
+Ping Test (End-to-End Connectivity)
+Running Configuration
 
-	
+
 Author
 Talal Ali Alshehri
 Information Technology Graduate with a strong interest in Networking, Cisco Technologies, and IT Infrastructure.
 
+	
